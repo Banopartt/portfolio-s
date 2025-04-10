@@ -6,19 +6,62 @@
     <title> My Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+
 </head>
 <body>
-    <nav id="dekstop-nav">
-        <div class="logo">Turgaliyeva Almat Maratovna</div>
+    <nav id="desktop-nav">
+        <div class="logo">Тургалиева Айман Маратовна</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Өзім туралы</a></li>
+                <li><a href="#experience">Жетістіктер</a></li>
+                <li><a href="#projects">Тәжірибе</a></li>
+                <li><a href="#contact">Контакт</a></li>
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Тургалиева Айман Маратовна</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Өзім туралы</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Жетістіктер</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Тәжірибе</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Контакт</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile-pic.jpeg" alt="TAM profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title"> Тургалиева Айман Маратовна</h1>
+            <p class="section__text__">Lorem, ipsum.</p>
+            <div class="btn-container">
+                <button 
+                 class="btn bth-color-2"
+                 onclick="window.open('./assests/profile-pic.jpeg')">
+                    Download CV
+                </button>
+                <button 
+                 class="btn bth-color-1" 
+                 onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/" alt="">
+            </div>
+        </div>
+    </section>
     <script src="/script.js"></script>
 </body>
 </html>
