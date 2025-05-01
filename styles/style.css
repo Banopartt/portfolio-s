@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -161,9 +161,17 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     margin: auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section__text {
@@ -210,7 +218,7 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1,:hover 
+.btn-color-1:hover, 
 .btn-color-2:hover {
     cursor: pointer;
 }
@@ -241,37 +249,120 @@ section {
     position: relative;
 }
 
+#about .section-container {
+    align-items: center;
+}
+
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.about-datelis-container {
+.about-details-container {
     justify-content: center;
     flex-direction: column;
 }
 
-.about-conatiner , .about-datelis-container {
+.about-container, .about-details-container {
     display:flex;
 }
 
 .about-pic {
-    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1000;
+
 }
 
 .details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
+    max-width: 250px;
 }
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic__container {
+    display: flex;
+    height: 300px;
+    width: 2500px;
+    margin: auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details-container img.icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .card {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    background-color: #eaeaea;
+  }
+  
+  .pdf-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 1;
+  }
+  
+  .pdf-list a {
+    background: #dde5ec;
+    padding: 6px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .pdf-list.collapsed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  } 

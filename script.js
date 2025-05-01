@@ -4,3 +4,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+
+function togglePDFs(cardElement) {
+    const pdfList = cardElement.querySelector('.pdf-list');
+    pdfList.classList.toggle('collapsed');
+  }
