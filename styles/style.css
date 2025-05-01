@@ -324,7 +324,7 @@ section {
     padding: 30px;
   }
   
-.card {
+.card{
     background-color: #f6f6f6;
     padding: 20px;
     border-radius: 10px;
@@ -367,4 +367,52 @@ section {
     pointer-events: none;
   } 
 
-  
+
+
+.experience-details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5rem;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.card-content img {
+    width: 100px;
+    height: 100px;
+}
