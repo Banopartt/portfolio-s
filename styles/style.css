@@ -315,7 +315,7 @@ section {
     margin-bottom: 1rem;
   }
   
-  .card-container {
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -324,7 +324,7 @@ section {
     padding: 30px;
   }
   
-  .card {
+.card {
     background-color: #f6f6f6;
     padding: 20px;
     border-radius: 10px;
@@ -332,26 +332,26 @@ section {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
     overflow: hidden;
   }
   
-  .card:hover {
+.card:hover {
     background-color: #eaeaea;
   }
   
-  .pdf-list {
+.card-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     margin-top: 15px;
     max-height: 500px;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: 0.4s ease, 0.4s ease;
     opacity: 1;
   }
   
-  .pdf-list a {
+.card-content a {
     background: #dde5ec;
     padding: 6px;
     text-decoration: none;
@@ -361,8 +361,10 @@ section {
     text-align: center;
   }
   
-  .pdf-list.collapsed {
+.card-content.collapsed {
     max-height: 0;
     opacity: 0;
     pointer-events: none;
   } 
+
+  

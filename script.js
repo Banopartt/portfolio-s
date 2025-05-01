@@ -6,7 +6,9 @@ function toggleMenu() {
 }
 
 
-function togglePDFs(cardElement) {
-    const pdfList = cardElement.querySelector('.pdf-list');
-    pdfList.classList.toggle('collapsed');
-  }
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+      const content = this.querySelector('.card-content');
+      content.classList.toggle('open');
+    });
+  });

@@ -89,7 +89,7 @@
         <img src="assests/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'">
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
+        <p class="section__text__p1">Explore Me</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -97,7 +97,7 @@
                     <div class="card-container">
                         <div class="card" onclick="togglePDFs(this)">
                           <span>Басылымдар</span>
-                          <div class="pdf-list collapsed">
+                          <div class="card-content collapsed">
                             <a href="./pdf-files/туркия.PDF">PDF 1</a>
                             <a href="./pdf-files/РЕСПУБЛИКАЛЫК ГЫЛЫМИ-ЭДІСТЕМЕЛІК ЖУРНАЛ.pdf">PDF 2</a>
                             <a href="./pdf-files/казакстаннын гылымы мен омири 61 2020.PDF">PDF 3</a>
@@ -110,17 +110,42 @@
                             <a href="./pdf-files/КАЗАКСТАН.pdf">PDF 10</a>
                           </div>
                         </div>
-                        <div class="card"><span>Білім сапасы</span></div>
-                        <div class="card"><span>Жетістіктер</span></div>
-                        <div class="card"><span>Тәжірибе тарату</span></div>
-                        <div class="card"><span>Баяндамалар</span></div>
-                        <div class="card"><span>Топтарға, жобаларға қатысу</span></div>
-                        <div class="card"><span>Оқу-әдістемелік материалдар</span></div>
-                        <div class="card"><span>Сынып жетекшілік/кураторлық</span></div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Білім сапасы</span>
+                            <div class="card-content collapsed"><p></p></div>
+                         </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Жетістіктер</span> 
+                            <div class="card-content collapsed"><p></p></div>
+                        </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Тәжірибе тарату</span> 
+                            <div class="card-content collapsed"><p></p></div>
+                        </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Баяндамалар</span> 
+                            <div class="card-content collapsed"><p></p></div>
+                        </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Топтарға, жобаларға қатысу</span>
+                            <div class="card-content collapsed"><p></p></div>
+                        </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Оқу-әдістемелік материалдар</span> 
+                            <div class="card-content collapsed"><p></p></div> 
+                        </div>
+                        <div class="card" onclick="togglePDFs(this)">
+                            <span>Сынып жетекшілік/кураторлық</span> 
+                            <div class="card-content collapsed"><p></p></div> 
+                        </div>
                       </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
     </section>
     <script src="/script.js"></script>
 </body>
